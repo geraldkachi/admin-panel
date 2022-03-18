@@ -7,6 +7,7 @@ import "./sidebar.css"
 
 const Sidebar = () => {
   const location = useLocation()
+  // const activePath = window.location.pathname;
   return (
     <div className="sidebar">
       <div className="sidebar__logo">
@@ -19,6 +20,7 @@ const Sidebar = () => {
             <Link to={item.route} key={i}>
               <div className="sidebar__item">
                 <div className={`sidebar__item-inner ${i === activeItem && "active"}`}>
+                {/* <div className={`sidebar__item-inner ${item.route === activePath && "active"}`}> */}
                   <i className={item.icon}></i>
                   <span>{item.display_name}</span>
                 </div>

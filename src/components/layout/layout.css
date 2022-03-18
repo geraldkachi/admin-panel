@@ -1,5 +1,5 @@
 .layout {
-    color: var(--main-color);
+    /* color: var(--main-color); */
 }
 
 .layout__content {
@@ -9,5 +9,6 @@
 }
 
 .layout__content-main {
-    padding: 30px;
+    padding: 5px;
+    /* padding: 30px; */
 }

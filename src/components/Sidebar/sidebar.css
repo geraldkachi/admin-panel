@@ -1,9 +1,11 @@
-.sidebar{
+.sidebar {
     height: 100vh;
-    min-width: var(--sidebar-width);
+    /* min-width: var(--sidebar-width); */
+    min-width: 18vw;
     position: fixed;
     left: 0;
     top: 0;
+    transition: all 0.3s ease;
     background-color: var(--main-bg);
     box-shadow: var(--box-shadow);
 }
@@ -24,12 +26,12 @@
 }
 
 .sidebar__item-inner {
-    padding: 15px 15px;
+    padding: 10px 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
     font-weight: 600;
     transition: color .3s ease 0s;
+    font-size: 15px;
 }
 
 .sidebar__item-inner > i {

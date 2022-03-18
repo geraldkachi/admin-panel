@@ -1,7 +1,7 @@
 // import './App.css';
-import "./assets/boxicons-2.0.7/css/boxicons.min.css"
-import "./assets/css//grid.css"
-import "./assets/css/index.css"
+// import "./assets/boxicons-2.0.7/css/boxicons.min.css"
+// import "./assets/css//grid.css"
+// import "./assets/css/index.css"
 import { Routes, Route } from "react-router-dom";
 import Dashboard from './pages/Dashboard';
 import Customers from './pages/Customers';
@@ -9,7 +9,7 @@ import Layout from './components/layout/Layout';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="settings" element={<Customers />} />
         </Route>
       </Routes>
-    </div>
+    </>
   );
 }
 
