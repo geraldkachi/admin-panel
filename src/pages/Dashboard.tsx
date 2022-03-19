@@ -1,8 +1,10 @@
-import React from 'react'
 import statusCard from "../assets/JsonData/status-card-data.json"
 import StatusCard from "../components/StatusCard/StatusCard"
 
 import Chart from "react-apexcharts"
+import { Link } from 'react-router-dom'
+import Table from "../components/Table/Table"
+import Badge from "../components/Badge/Badge"
 
 const chartOptions = {
   series: [{
@@ -130,7 +132,7 @@ const latestOrders = {
   ]
 }
 
-const orderStatus = {
+const orderStatus: any = {
   "shipping": "primary",
   "pending": "warning",
   "paid": "success",
@@ -147,8 +149,12 @@ const renderOrderBody = (item: any, index: number) => (
     <td>{item.user}</td>
     <td>{item.price}</td>
     <td>{item.date}</td>
+    {/* <td>{item.status}</td> */}
+    {/* <td>
+      <span>{item.status}</span>
+    </td> */}
     <td>
-      {/* <Badge type={orderStatus[item.status]} content={item.status}/> */}
+      <Badge type={orderStatus[item.status]} content={item.status}/>
     </td>
   </tr>
 )
@@ -170,22 +176,60 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
-        <div className="col-6" style={{alignSelf:'center', justifySelf:'center'}}>
-          <div className="card full-height" style={{alignSelf:'center', justifySelf:'center'}}>
+        <div className="col-6" style={{ alignSelf: 'center', justifySelf: 'center' }}>
+          <div className="card full-height" style={{ alignSelf: 'center', justifySelf: 'center' }}>
             {/* chart */}
-              <Chart
-            //   options={themeReducer === 'theme-mode-dark' ? {
-            //     ...chartOptions.options,
-            //     theme: { mode: 'dark'}
-            // } : {
-            //     ...chartOptions.options,
-            //     theme: { mode: 'light'}
-            // }}
-                options={chartOptions}
-                series={chartOptions.series}
-                type='line'
-                height='100%'
-               />
+            <Chart
+              //   options={themeReducer === 'theme-mode-dark' ? {
+              //     ...chartOptions.options,
+              //     theme: { mode: 'dark'}
+              // } : {
+              //     ...chartOptions.options,
+              //     theme: { mode: 'light'}
+              // }}
+              options={chartOptions}
+              series={chartOptions.series}
+              type='line'
+              height='100%'
+            />
+          </div>
+        </div>
+        <div className="col-5">
+          <div className="card">
+            <div className="card__header">
+              <h3>top customers</h3>
+            </div>
+            <div className="card__body">
+              {/* table */}
+              <Table
+                headData={topCustomers.head}
+                renderHead={(item: any, index: number) => renderCusomerHead(item, index)}
+                bodyData={topCustomers.body}
+                renderBody={(item: any, index: number) => renderCusomerBody(item, index)}
+              />
+            </div>
+            <div className="card__footer">
+              {/* footer */}
+              <Link to="/">view all</Link>
+            </div>
+          </div>
+        </div>
+        <div className="col-7">
+          <div className="card">
+            <div className="card__header">
+              <h3>latest orders</h3>
+            </div>
+            <div className="card__body">
+              <Table
+                headData={latestOrders.header}
+                renderHead={(item: any, index: number) => renderOrderHead(item, index)}
+                bodyData={latestOrders.body}
+                renderBody={(item: any, index: number) => renderOrderBody(item, index)}
+              />
+            </div>
+            <div className="card__footer">
+              <Link to='/'>view all</Link>
+            </div>
           </div>
         </div>
       </div>

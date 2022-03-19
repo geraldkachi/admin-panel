@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import "./topnav.css"
 import notifications from "../../assets/JsonData/notification.json"
 import user_image from "../../assets/images/tuat.png"
+// import user_image from "../../assets/images/kachi.JPG"
+
 import user_menu from "../../assets/JsonData/user_menus.json"
 
 const renderNotificationItem = (item: any, index: number) => (

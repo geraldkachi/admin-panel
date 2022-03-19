@@ -1,10 +1,10 @@
 [
 	{
 		"id": 1,
-		"name": "Brittan Rois",
-		"email": "brois0@unicef.org",
-		"location": "Bator",
-		"phone": "+62 745 807 7685",
+		"name": "Adimora Augustine Onyekachi",
+		"email": "fitzgeraldkachi@gmail.com",
+		"location": "Lagos",
+		"phone": "+234 917 324 0950",
 		"total_spend": "$557248.44",
 		"total_orders": 24011
 	},
@@ -898,5 +898,14 @@
 		"phone": "+86 630 450 6014",
 		"total_spend": "$920279.19",
 		"total_orders": 32514
+	},
+	{
+		"id": 101,
+		"name": "Brittan Rois",
+		"email": "brois0@unicef.org",
+		"location": "Bator",
+		"phone": "+62 745 807 7685",
+		"total_spend": "$557248.44",
+		"total_orders": 24011
 	}
 ]
