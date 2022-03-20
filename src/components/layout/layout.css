@@ -1,14 +1,15 @@
 .layout {
     /* color: var(--main-color); */
+    overflow: hidden;
 }
 
 .layout__content {
     padding-left: var(--sidebar-width);
     background-color: var(--second-bg);
     min-height: 100vh;
+    /* display: flex; */
 }
 
 .layout__content-main {
-    padding: 5px;
-    /* padding: 30px; */
+    padding: 20px;
 }

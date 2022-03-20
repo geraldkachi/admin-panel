@@ -27,7 +27,7 @@ const renderBody = (item: any, index: number) => (
 
 const Customers = () => {
     return (
-        <div style={{overflow:'hidden'}}>
+        <div>
             <h2 className="page-header">
                 customers
             </h2>

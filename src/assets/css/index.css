@@ -89,7 +89,7 @@ input {
 }
 
 .card {
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 30px;
     background-color: var(--main-bg);
     box-shadow: var(--box-shadow);

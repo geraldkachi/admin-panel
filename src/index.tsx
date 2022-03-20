@@ -1,18 +1,29 @@
-import ReactDOM from 'react-dom';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-
 import './assets/boxicons-2.0.7/css/boxicons.min.css'
 import './assets/css/grid.css'
 import './assets/css/theme.css'
 import './assets/css/index.css'
+import ReactDOM from 'react-dom';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+
+import rootReducer from './redux/reducer';
+import { createStore } from 'redux';
+
+const store = createStore(
+  rootReducer, 
+  // window.__
+  )
+
 
 document.title = "Admin Gerald"
 
 ReactDOM.render(
   <BrowserRouter>
+  <Provider {...{store}}>
     <App />
+    </Provider>
   </BrowserRouter>,
   document.getElementById('root')
 );

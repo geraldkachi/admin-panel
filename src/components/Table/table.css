@@ -19,7 +19,7 @@ tr {
 th, td {
     text-transform: capitalize;
     padding: 10px 10px;
-    font-size: .9rem;
+    font-size: .8rem;
 } 
 
 tbody > tr:hover {
@@ -48,6 +48,7 @@ tbody > tr:hover {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: .8rem;
 }
 
 .table__pagination-item.active,

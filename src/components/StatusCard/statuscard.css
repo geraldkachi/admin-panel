@@ -1,6 +1,6 @@
 .status-card {
     /* margin-top: 15px; */
-    padding: 25px;
+    padding: 20px;
     display: flex;
     align-items: center;
     background: var(--main-bg);
@@ -18,7 +18,7 @@
 
 .status-card__icon {
     width: 30%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@
 }
 
 .status-card__info > h4 {
-    font-size: 1.5em;
+    font-size: 1.2rem;
     /* margin-bottom: 10px; */
 }
 

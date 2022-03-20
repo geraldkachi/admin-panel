@@ -7,6 +7,7 @@ import user_image from "../../assets/images/tuat.png"
 // import user_image from "../../assets/images/kachi.JPG"
 
 import user_menu from "../../assets/JsonData/user_menus.json"
+import ThemeMenu from '../ThemeMenu/ThemeMenu'
 
 const renderNotificationItem = (item: any, index: number) => (
     <div className="notification-item" key={index}>
@@ -73,6 +74,7 @@ const Topnav = () => {
                 <div className="topnav__right-item">
                     {/* theme settings */}
                     {/* <Dropdown icon="bx bx-user" /> */}
+                    <ThemeMenu />
                 </div>
             </div>
         </div>

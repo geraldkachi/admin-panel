@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 30px; */
-    padding: 5px;
+    padding: 20px;
     height: var(--topnav-height);
 }
 
@@ -52,7 +51,6 @@
     display: flex;
     align-items: center;
     margin: 20px;
-    font-size: .8rem;
 }
 
 .notification-item:hover {
@@ -70,8 +68,8 @@
 }
 
 .topnav__right-user__image {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
@@ -82,6 +80,6 @@
 }
 
 .topnav__right-user__name {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 600;
 }
