@@ -164,7 +164,7 @@ const Dashboard = () => {
   return (
     <div style={{ overflow: 'hidden' }}>
       <h3 className="page-header">Dashboard</h3>
-      <div className="row">
+      <div className="row row-flex">
         <div className="col-6">
           <div className="row">
             {statusCard.map(item => (

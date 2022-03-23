@@ -1,15 +1,22 @@
 .layout {
-    /* color: var(--main-color); */
+    color: var(--main-color);
     overflow: hidden;
+    display: flex;
 }
 
 .layout__content {
     padding-left: var(--sidebar-width);
     background-color: var(--second-bg);
     min-height: 100vh;
-    /* display: flex; */
+    overflow: scroll;
 }
 
 .layout__content-main {
     padding: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .layout__content {
+        padding-left: 200px;   
+    }
 }
