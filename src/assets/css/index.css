@@ -19,6 +19,9 @@
     --txt-color-dark: #bbbbbb;
     --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
 
+    --main-color-light: #455560;
+    --second-color-light:  #455560;
+
     --main-color-blue: #349eff;
     --second-color-blue: #62b4ff;
 
@@ -127,6 +130,11 @@ input {
     color: #fff;
 }
 
+.light-color {
+    background-color: var(--main-color-light);
+    color: #455560;
+}
+
 .blue-color {
     background-color: var(--main-color-blue);
     color: #fff;
@@ -152,10 +160,10 @@ input {
     color: #fff;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     background-color: black;
     width: 0.4vw;
   }
   ::-webkit-scrollbar-thumb {
     background: #fff;
-  }
+  } */

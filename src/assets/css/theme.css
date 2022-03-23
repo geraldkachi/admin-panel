@@ -12,6 +12,11 @@
     --box-shadow: var(--box-shadow-dark);
 }
 
+.theme-color-light {
+    --main-color: var(--txt-color);
+    --second-color: var(--second-color-light);
+}
+
 .theme-color-blue {
     --main-color: var(--main-color-blue);
     --second-color: var(--second-color-blue);

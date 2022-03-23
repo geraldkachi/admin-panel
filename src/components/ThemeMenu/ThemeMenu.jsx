@@ -181,6 +181,12 @@ const mode_settings = [
 
 const color_settings = [
     {
+        id: 'light',
+        name: 'Light',
+        background: 'light-background',
+        class: 'theme-color-light'
+    },
+    {
         id: 'blue',
         name: 'Blue',
         background: 'blue-color',
@@ -239,7 +245,7 @@ const ThemeMenu = () => {
 
     const [currMode, setcurrMode] = useState('light')
 
-    const [currColor, setcurrColor] = useState('blue')
+    const [currColor, setcurrColor] = useState('light')
 
     const dispatch = useDispatch()
 
@@ -297,7 +303,7 @@ const ThemeMenu = () => {
                         {
                             color_settings.map((item, index) => (
                                 <li key={index} onClick={() => setColor(item)}>
-                                    <div className={`mode-list__color ${item.background} ${item.id === currColor ? 'active' : ''}`}>
+                                    <div className={`mode-list__color ${item.background} ${item.id === currColor && 'active' }`}>
                                         <i className='bx bx-check'></i>
                                     </div>
                                     <span>{item.name}</span>
