@@ -10,6 +10,10 @@
     box-shadow: var(--box-shadow);
 }
 
+.sidebar__logo span {
+    font-size: xx-large;
+    font-weight: 700;
+}
 .sidebar__logo {
     height: 150px;
     display: flex;

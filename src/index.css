@@ -21,7 +21,9 @@ code {
 } */
 
 
-/* div {
+/* div {setColor
+setColor
+setColor
   width: 100px;
   height: 100px;
   margin: 100px auto;
@@ -29,10 +31,10 @@ code {
 
   transition-property: all;
   transition-duration: .5s;
-  transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22); 
+  transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition-delay: 1s;
 
-  css shortcuts in order 
+  css shortcuts in order
   transition: all .5s linear 1s;
   transition: all .5s linear;
 }

@@ -1,6 +1,5 @@
-import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import logo from "../../assets/images/logo.png"
+// import logo from "../../assets/images/logo.png"
 import sidebar_items from "../../assets/JsonData/sidebar_routes.json"
 import "./sidebar.css"
 
@@ -11,7 +10,8 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar__logo">
-        <img src={logo} alt="company logo" />
+        {/* <img src={logo} alt="company logo" /> */}
+        <span>Kachman</span>
       </div>
       {
         sidebar_items.map((item: any, i: number) => {
